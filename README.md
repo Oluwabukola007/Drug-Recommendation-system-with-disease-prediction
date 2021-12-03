@@ -1,2 +1,2 @@
-# smart-health-recommender
-test app
+# Drug Recommendation System with Disease Prediction
+Developed by: Oluwabukola Ogundipe
