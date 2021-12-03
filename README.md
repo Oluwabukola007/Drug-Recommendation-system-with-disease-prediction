@@ -1,2 +1,2 @@
-# Drug-Recommendation-system-with-disease-prediction
-Drug Recommendation system with disease prediction
+# smart-health-recommender
+test app
