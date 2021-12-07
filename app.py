@@ -51,11 +51,11 @@ if st.button("Evaluate"):
 
 			name = (out)
 
-			col = [x[0] for x in data]
+			col = [x[1] for x in data]
 
 			if name in col:
-				for x in range(0,len(data)):
-					if name == data[x][0]:
+				for x in range(1,len(data)):
+					if name == data[x][1]:
 						st.write(data[x])
 
 			else:
