@@ -36,7 +36,7 @@ if st.button("Evaluate"):
 			##st.success("Prediction complete!")
 			##st.write("The diagnosis we have reached is: ")
 			##st.error(*prediction)
-			out = "disease"
+			out = ""
 			st.write("Searching for Drugs For Selected Disease")
 			out =(disease)
 			st.error(out)
@@ -51,11 +51,11 @@ if st.button("Evaluate"):
 
 			name = (out)
 
-			col = [x[1] for x in data]
+			col = [x[0] for x in data]
 
 			if name in col:
-				for x in range(1,len(data)):
-					if name == data[x][1]:
+				for x in range(0,len(data)):
+					if name == data[x][0]:
 						st.write(data[x])
 
 			else:
