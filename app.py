@@ -20,7 +20,7 @@ disease = st.multiselect('Enter your symptoms so that we can get you a primary d
 # creating dataframe for accepting testing values
 prediction_value = [0 for i in range(132)]
 for sym in disease:
-	index = symptoms_list.index(sym)
+	index = disease_list.index(sym)
 	# assigning encoded value to testing frame
 	prediction_value[index] = 1
 
