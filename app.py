@@ -41,7 +41,7 @@ if st.button("Evaluate"):
 			out =(disease)
 			st.error(out)
 			bj = ""
-			bj =(out)
+			bj +=(out)
 
 			st.write("Fetching Recommended Drugs")
 			# using pandas to read normlized file
