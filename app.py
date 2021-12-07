@@ -6,6 +6,7 @@ import streamlit as st
 import pandas as pd
 import time
 import csv
+import sys
 
 # loading model and list of symptoms
 # model = joblib.load("saved_model/random_f.joblib")
@@ -51,7 +52,7 @@ if st.button("Evaluate"):
 				for row in reader:
 					data.append(row)
 
-			name = (out)
+			name = (disease)
 
 			col = [x[0] for x in data]
 
