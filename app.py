@@ -25,7 +25,7 @@ for sym in disease:
 	prediction_value[index] = 1
 
 # convert list to Pandas dataframe and transpose it for model evaluation
-query = pd.DataFrame(prediction_value).T
+##query = pd.DataFrame(prediction_value).T
 ##prediction = model.predict(query)
 
 # evaluation and confirmation
@@ -38,7 +38,7 @@ if st.button("Evaluate"):
 			##st.error(*prediction)
 			out = ""
 			st.write("Searching for Drugs For Selected Disease")
-			out +=(query)
+			out +=(index)
 			st.error(out)
 
 			st.write("Fetching Recommended Drugs")
