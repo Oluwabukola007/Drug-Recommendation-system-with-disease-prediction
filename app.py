@@ -51,7 +51,7 @@ if st.button("Evaluate"):
 				for row in reader:
 					data.append(row)
 
-			name = (disease)
+			name = (out)
 
 			col = [x[0] for x in data]
 
