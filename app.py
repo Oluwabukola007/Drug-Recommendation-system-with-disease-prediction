@@ -18,11 +18,11 @@ st.header("Please enter your symptoms 🩺")
 disease = st.multiselect('Enter your symptoms so that we can get you a primary diagnosis:',[*disease_list],key='disease')
 
 # creating dataframe for accepting testing values
-prediction_value = [0 for i in range(132)]
-for sym in disease:
-	index = disease_list.index(sym)
+##prediction_value = [0 for i in range(132)]
+##for sym in disease:
+	##index = disease_list.index(sym)
 	# assigning encoded value to testing frame
-	prediction_value[index] = 1
+	##prediction_value[index] = 1
 
 # convert list to Pandas dataframe and transpose it for model evaluation
 ##query = pd.DataFrame(prediction_value).T
