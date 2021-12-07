@@ -29,7 +29,7 @@ disease = st.multiselect('Enter your symptoms so that we can get you a primary d
 
 st.write("Fetching Recommended Drugs")
 # using pandas to read normlized file
- data=[]
+data=[]
  with open ("Grouped_Drug_Recommendation_Normalized.csv") as csvfile:
   reader = csv.reader(csvfile)
   for row in reader:
