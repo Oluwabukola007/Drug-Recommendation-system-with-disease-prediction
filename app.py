@@ -25,6 +25,29 @@ disease = st.multiselect('Enter your symptoms so that we can get you a primary d
 	# assigning encoded value to testing frame
 	##prediction_value[index] = 1
 
+#new searcher
+#input number you want to search
+number = (disease)
+
+with open ("Grouped_Drug_Recommendation_Normalized.csv") as csvfile:
+				reader = csv.reader(csvfile)
+				for row in reader:
+					data.append(row)
+
+			name = (disease)
+
+			col = [x[0] for x in data]
+
+			if name in col:
+				for x in range(0,len(data)):
+					if name == data[x][0]:
+						st.write(data[x])
+
+			else:
+				st.write("No Drugs found for that illness")
+
+#end of new searcher
+
 # convert list to Pandas dataframe and transpose it for model evaluation
 ##query = pd.DataFrame(prediction_value).T
 ##prediction = model.predict(query)
