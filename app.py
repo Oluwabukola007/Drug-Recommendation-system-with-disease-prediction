@@ -2,7 +2,7 @@
 
 # importing necessary modules
 import streamlit as st
-import joblib
+##import joblib
 import pandas as pd
 import time
 import csv
@@ -36,7 +36,7 @@ if st.button("Evaluate"):
 			##st.success("Prediction complete!")
 			##st.write("The diagnosis we have reached is: ")
 			##st.error(*prediction)
-			out = ""
+			out = "disease"
 			st.write("Searching for Drugs For Selected Disease")
 			out +=(disease)
 			st.error(out)
