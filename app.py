@@ -18,6 +18,39 @@ st.header("Please enter your symptoms 🩺")
 
 disease = st.multiselect('Enter your symptoms so that we can get you a primary diagnosis:',[*disease_list],key='disease')
 
+# evaluation and confirmation
+if st.button("Evaluate"):
+	with st.spinner('Predicting output...'):
+		time.sleep(1)
+		if disease:
+			st.write("Searching for Drugs For Selected Disease")
+			out = (disease)
+			st.write("Fetching Recommended Drugs")
+			# using pandas to read normlized file
+			data=[]
+			with open ("Grouped_Drug_Recommendation_Normalized.csv") as csvfile:
+				reader = csv.reader(csvfile)
+				for row in reader:
+					data.append(row)
+
+			name = (out)
+
+			col = [x[0] for x in data]
+
+			if name in col:
+				for x in range(0,len(data)):
+					if name == data[x][0]:
+						st.write(data[x])
+
+			else:
+				st.write("No Drugs found for that illness")
+
+
+			st.write("Recommendation is Over, Doctor! 🏥")
+
+		else:
+			st.info("Please enter at least one symptom before clicking evaluate!")
+			
 
 # using pandas to read normlized file
 data=[]
