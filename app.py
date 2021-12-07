@@ -38,7 +38,7 @@ if st.button("Evaluate"):
 			##st.error(*prediction)
 			out = "disease"
 			st.write("Searching for Drugs For Selected Disease")
-			out +=(disease)
+			out =(disease)
 			st.error(out)
 
 			st.write("Fetching Recommended Drugs")
