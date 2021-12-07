@@ -29,23 +29,23 @@ disease = st.multiselect('Enter your symptoms so that we can get you a primary d
 
 st.write("Fetching Recommended Drugs")
 # using pandas to read normlized file
-	data=[]
-	with open ("Grouped_Drug_Recommendation_Normalized.csv") as csvfile:
-		reader = csv.reader(csvfile)
-		for row in reader:
-			data.append(row)
+ data=[]
+ with open ("Grouped_Drug_Recommendation_Normalized.csv") as csvfile:
+  reader = csv.reader(csvfile)
+  for row in reader:
+  data.append(row)
 
-	name = (disease)
+  name = (disease)
 
-	col = [x[0] for x in data]
+  col = [x[0] for x in data]
 
-	if name in col:
-		for x in range(0,len(data)):
-			if name == data[x][0]:
-			st.write(data[x])
+  if name in col:
+  for x in range(0,len(data)):
+  if name == data[x][0]:
+  st.write(data[x])
 
-			else:
-				st.write("No Drugs found for that illness")
+   else:
+ st.write("No Drugs found for that illness")
 
 #end of new finder
 
