@@ -40,6 +40,8 @@ if st.button("Evaluate"):
 			st.write("Searching for Drugs For Selected Disease")
 			out =(disease)
 			st.error(out)
+			bj = ""
+			bj =(out)
 
 			st.write("Fetching Recommended Drugs")
 			# using pandas to read normlized file
@@ -49,7 +51,7 @@ if st.button("Evaluate"):
 				for row in reader:
 					data.append(row)
 
-			name = (out)
+			name = (bj)
 
 			col = [x[0] for x in data]
 
