@@ -33,11 +33,11 @@ if st.button("Evaluate"):
 	with st.spinner('Predicting output...'):
 		time.sleep(1)
 		if symptoms:
-			st.success("Prediction complete!")
-			st.write("The diagnosis we have reached is: ")
-			st.error(*prediction)
+			##st.success("Prediction complete!")
+			##st.write("The diagnosis we have reached is: ")
+			##st.error(*prediction)
 			out = ""
-			st.write("Searching for Drugs For The Below illness")
+			st.write("Searching for Drugs")
 			out +=(prediction)
 			st.error(out)
 
